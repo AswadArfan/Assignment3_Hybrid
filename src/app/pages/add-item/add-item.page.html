@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Item</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="stacked">Name</ion-label>
+    <ion-input [(ngModel)]="itemName"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Price</ion-label>
+    <ion-input [(ngModel)]="itemPrice" type="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Description</ion-label>
+    <ion-textarea [(ngModel)]="itemDescription"></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="addItem()">Add Item</ion-button>
+</ion-content>

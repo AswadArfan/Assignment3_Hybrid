@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Auth</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment [(ngModel)]="authMode">
+    <ion-segment-button value="login">Login</ion-segment-button>
+    <ion-segment-button value="signup">Signup</ion-segment-button>
+  </ion-segment>
+
+  <ion-item>
+    <ion-label position="stacked">Username</ion-label>
+    <ion-input [(ngModel)]="username"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input [(ngModel)]="password" type="password"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="onSubmit()">Submit</ion-button>
+</ion-content>

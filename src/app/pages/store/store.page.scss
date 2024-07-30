@@ -1,0 +1,16 @@
+.custom-table {
+    ion-row, ion-col {
+      border: 1px solid white;
+      padding: 5px;
+      text-align: center;
+    }
+    ion-row {
+      &:first-of-type {
+
+        font-weight: bold;
+        color: white;
+        background-color:teal;
+      }
+    }
+  }
+  
